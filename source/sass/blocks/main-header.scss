@@ -1,0 +1,20 @@
+.main-header {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  min-height: 120px;
+  padding: 30px 20px 35px;
+  background: linear-gradient(180deg, $text-color 84.9%, rgba(4, 24, 39, 0) 100%);
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 89.7%;
+  max-width: $vp-1024;
+}
+
+.main-header__set-call {
+  align-items: center;
+}

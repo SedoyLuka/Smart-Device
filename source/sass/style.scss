@@ -1,5 +1,24 @@
-// Vendor
-// ---------------------------------
+// Шрифты
+
+$common-font: "PT Mono";
+$header-font: "Roboto Condensed";
+$reserve: "Arial";
+$secondary-slogan: "Roboto";
+
+// Переменные
+
+$text-color: #041827;
+$text-white: #f2f5f6;
+$main-blue: #00b2ff;
+$goods-bg: #041827;
+$black-btn: #041427;
+$substrate: #192024;
+$blue-focus-hover: #088cc6;
+
+
+$tablet-width: 767px;
+$desktop-width: 1023px;
+
 
 @import "vendor/normalize";
 // Swiper 7.4.1
@@ -23,6 +42,7 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/main-header.scss"
 
 // ---------------------------------
 
