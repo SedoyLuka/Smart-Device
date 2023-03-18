@@ -13,8 +13,21 @@
   margin: 0 auto;
   width: 89.7%;
   max-width: $vp-1024;
+
+  @media (max-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 89.7%;
+    max-width: $vp-1024;
+  }
 }
 
 .main-header__set-call {
   align-items: center;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

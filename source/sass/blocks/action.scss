@@ -1,0 +1,100 @@
+.action {
+  display: flex;
+  justify-content: space-between;
+  width: clamp(365px, 39.3%, 480px);
+
+  @include vp-1023 {
+    width: max-content;
+    margin-right: 3%;
+  }
+}
+
+.action__link {
+  position: relative;
+  display: flex;
+  min-width: max-content;
+  min-height: 20px;
+  margin-bottom: 10px;
+  padding-left: 35px;
+  justify-content: center;
+  line-height: 18px;
+  color: $color-default-white;
+
+
+  @include vp-1023 {
+    min-width: 40px;
+    height: 40px;
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(7n) {
+      margin-right: 0;
+    }
+  }
+
+  @include vp-767 {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  @include hover {
+    opacity: 0.5;
+  }
+
+  &--mail {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-right: auto;
+      background-image: url("../img/svg/letter.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @include vp-1023 {
+        margin: auto;
+      }
+    }
+  }
+
+  &--phone {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-right: auto;
+      background-image: url("../img/svg/phone-call.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @include vp-1023 {
+        margin: auto;
+      }
+    }
+  }
+
+  p {
+    max-width: 220px;
+    margin: 0;
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+}
