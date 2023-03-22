@@ -1,5 +1,5 @@
 .intro {
-  padding: 200px 0 280px;
+  padding: 283px 0 280px;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
     url("../../img/background-image.jpg");
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
   }
 
   @media (max-width: ($vp-768 - 1px)) {
-    padding: 138px 20px 190px;
+    padding: 125px 20px 190px;
     background-position: 25%;
   }
 }
@@ -53,6 +53,7 @@
   @media (max-width: ($vp-768 - 1px)) {
     font-size: 36px;
     line-height: 42px;
+    padding: 0 0 8px 0;
   }
 }
 
@@ -75,6 +76,7 @@
   @media (max-width: ($vp-768 - 1px)) {
     font-size: 14px;
     min-width: 271px;
+    padding-bottom: 45px;
   }
 }
 
@@ -112,7 +114,7 @@
   @media (max-width: ($vp-768 - 1px)) {
     width: 100%;
     margin: 0;
-    padding: 12px 30px;
+    padding: 12px 20px;
     font-size: 14px;
     line-height: 16px;
   }

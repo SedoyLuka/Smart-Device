@@ -1,6 +1,7 @@
 .info {
   padding-top: 120px;
   padding-bottom: 118px;
+  padding-left: 310px;
 
   background-color: $color-alice-blue-lightest;
 
@@ -11,6 +12,7 @@
 
   @include vp-767 {
     padding-top: 42px;
+    padding-left: 8px;
   }
 }
 

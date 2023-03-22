@@ -1601,7 +1601,7 @@ button,
 }
 
 .intro {
-  padding: 200px 0 280px;
+  padding: 283px 0 280px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/background-image.jpg");
   background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background-image.jpg");
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background-image.jpg");
@@ -1683,6 +1683,8 @@ button,
 
 .advantages {
   padding-top: 120px;
+  padding-left: 270px;
+  padding-right: 310px;
   background-color: #f2f5f7;
 }
 
@@ -2073,6 +2075,7 @@ button,
 .info {
   padding-top: 120px;
   padding-bottom: 118px;
+  padding-left: 310px;
   background-color: #f2f5f7;
 }
 
@@ -2570,6 +2573,10 @@ button,
     width: 100%;
   }
 
+  .main-header {
+    padding: 12px 10px 35px;
+  }
+
   .main-header__set-call {
     display: none;
   }
@@ -2732,24 +2739,26 @@ button,
   }
 
   .intro {
-    padding: 138px 20px 190px;
+    padding: 125px 20px 190px;
     background-position: 25%;
   }
 
   .intro h1 {
     font-size: 36px;
     line-height: 42px;
+    padding: 0 0 8px 0;
   }
 
   .intro p {
     font-size: 14px;
     min-width: 271px;
+    padding-bottom: 45px;
   }
 
   .intro__button {
     width: 100%;
     margin: 0;
-    padding: 12px 30px;
+    padding: 12px 20px;
     font-size: 14px;
     line-height: 16px;
   }
@@ -2763,11 +2772,12 @@ button,
   }
 
   .advantages {
-    padding-top: 50px;
+    padding: 50px 0 0 0;
   }
 
   .advantages__list {
     display: block;
+    padding: 0 8px;
   }
 
   .advantages__item {
@@ -2797,7 +2807,7 @@ button,
   }
 
   .advantages__title {
-    margin: 0 0 11px;
+    margin: 0 0 10px;
     font-size: 20px;
     line-height: 140%;
   }
@@ -2819,10 +2829,12 @@ button,
     font-weight: 400;
     font-size: 30px;
     line-height: 42px;
+    letter-spacing: -0.9px;
   }
 
   .form__container {
-    margin-bottom: 84px;
+    margin-bottom: 90px;
+    padding: 0 22px;
   }
 
   .form__container p {
@@ -2834,7 +2846,7 @@ button,
 
   .form__block--info {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .form__block--button {
@@ -2871,6 +2883,7 @@ button,
 
   .info {
     padding-top: 42px;
+    padding-left: 8px;
   }
 
   .info__container {
