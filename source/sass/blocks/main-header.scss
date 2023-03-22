@@ -1,5 +1,6 @@
 .main-header {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 1;
   margin: 0;
   min-height: 120px;
@@ -25,9 +26,17 @@
 
 .main-header__set-call {
   align-items: center;
-  display: none;
+  margin: -8px 60px 0 0;
+  border-radius: 3px;
+  border: 1px solid $color-alice-blue-lightest;
+  background: linear-gradient(180deg, $text-color 84.9%, rgba(4, 24, 39, 0) 100%);
 
-  @media (min-width: $tablet-width) {
-    display: block;
+  @media (max-width: ($vp-768 - 1px)) {
+    display: none;
+  }
+
+  @include vp-1023 {
+    margin-left: clamp(5px, 6.7%, 60px);
+    display: none;
   }
 }

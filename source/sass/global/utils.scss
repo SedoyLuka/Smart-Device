@@ -17,6 +17,12 @@
   }
 }
 
+.list-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .rouble {
   font-family: $ff-rouble;
   /* stylelint-disable */
@@ -49,7 +55,7 @@
 }
 
 .scroll-lock {
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .no-scrollbar {

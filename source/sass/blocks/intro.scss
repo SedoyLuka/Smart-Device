@@ -9,6 +9,9 @@
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -95px;
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
@@ -16,19 +19,19 @@
     background-size: cover;
   }
 
-  @media (max-width: ($vp-1920 - 1px)) {
+  @media (max-width: ($vp-1920 - 1)) {
     padding: 180px 0 205px;
     margin-top: -95px;
     background-position: 18%;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
-    padding: 138px 0 190px;
+    padding: 138px 20px 190px;
     background-position: 25%;
   }
 }
 
-.intro h2 {
+.intro h1 {
   font-family: $header-font;
   font-style: normal;
   font-weight: 700;
@@ -115,13 +118,13 @@
   }
 }
 
-.intro__text {
+.intro__desktop-text {
   @media (max-width: ($vp-768 - 1px)) {
     display: none;
   }
 }
 
-.intro__short {
+.intro__mobile-text {
   display: none;
 
   @media (max-width: ($vp-768 - 1px)) {

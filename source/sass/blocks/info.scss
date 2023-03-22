@@ -1,0 +1,124 @@
+.info {
+  padding-top: 120px;
+  padding-bottom: 118px;
+
+  background-color: $color-alice-blue-lightest;
+
+  @include vp-1023 {
+    padding-top: 74px;
+    padding-bottom: 80px;
+  }
+
+  @include vp-767 {
+    padding-top: 42px;
+  }
+}
+
+.info__container {
+  position: relative;
+
+  width: fit-content;
+  padding-left: 250px;
+
+  color: $goods-bg;
+
+  @include vp-1023 {
+    padding-left: 175px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 150px;
+    height: 320px;
+
+    background-image: url("../img/year-1x.png");
+
+    @include vp-1023 {
+      top: 7px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+}
+
+.info__title {
+  margin: 0 0 12px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  font-family: $header-font;
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.info__description {
+  margin-bottom: 40px;
+
+  @include vp-1023 {
+    margin-bottom: -5px;
+  }
+
+  @include vp-767 {
+    margin-bottom: -7px;
+  }
+
+  p {
+    margin: 0 0 20px;
+    padding: 0;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+}
+
+.info__text {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.info__description-container {
+  transition: all;
+}
+
+.info__button {
+  display: block;
+  min-width: 180px;
+  min-height: 45px;
+  padding: 14px 13px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $header-font;
+  text-align: center;
+  color: $main-blue;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  border: 1px solid $main-blue;
+  border-radius: 3px;
+
+  @include vp-767 {
+    min-width: 160px;
+    min-height: 35px;
+    padding: 8px 15px 9px;
+  }
+}

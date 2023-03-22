@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: clamp(365px, 39.3%, 480px);
+  align-items: center;
 
   @include vp-1023 {
     width: max-content;
