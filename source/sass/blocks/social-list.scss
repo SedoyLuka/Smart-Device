@@ -1,4 +1,8 @@
 .social-list__item {
+  @include vp-1023 {
+    padding-top: 6px;
+  }
+
   svg {
     fill: #f8fdff;
   }

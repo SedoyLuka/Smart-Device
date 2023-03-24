@@ -1,5 +1,5 @@
 .intro {
-  padding: 283px 0 280px;
+  padding: 282px 0 286px 475px;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
     url("../../img/background-image.jpg");
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   margin-top: -95px;
 
   @media (min-resolution: 2dppx) {
@@ -19,15 +19,29 @@
     background-size: cover;
   }
 
-  @media (max-width: ($vp-1920 - 1)) {
-    padding: 180px 0 205px;
+  @include vp-1919 {
+    padding: 308px 365px 280px;
+  }
+
+  @include vp-1023 {
+    padding: 156px 0 208px;
     margin-top: -95px;
     background-position: 18%;
   }
 
-  @media (max-width: ($vp-768 - 1px)) {
+  @include vp-767 {
     padding: 125px 20px 190px;
     background-position: 25%;
+  }
+}
+
+.intro__wrapper {
+  @include vp-1023 {
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0;
   }
 }
 
@@ -37,23 +51,25 @@
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 0.07em;
+  letter-spacing: -4.7px;
   text-transform: uppercase;
   color: $text-white;
-  padding: 0 0 40px 0;
+  padding: 0 0 34px 0;
   margin: 0;
 
-  @media (max-width: ($vp-1920 - 1px)) {
+  @include vp-1023 {
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
-    padding: 0 0 20px 0;
+    padding: 0;
+    letter-spacing: -2.5px;
   }
 
-  @media (max-width: ($vp-768 - 1px)) {
+  @include vp-767 {
     font-size: 36px;
     line-height: 42px;
     padding: 0 0 8px 0;
+    letter-spacing: -1.5px;
   }
 }
 
@@ -68,12 +84,12 @@
   padding-bottom: 40px;
   max-width: 685px;
 
-  @media (max-width: ($vp-1920 - 1px)) {
-    padding-bottom: 50px;
+  @include vp-1023 {
+    padding-bottom: 58px;
     min-width: 670px;
   }
 
-  @media (max-width: ($vp-768 - 1px)) {
+  @include vp-767 {
     font-size: 14px;
     min-width: 271px;
     padding-bottom: 45px;
@@ -107,11 +123,12 @@
     color: $text-white;
   }
 
-  @media (max-width: ($vp-1920 - 1px)) {
-    margin-left: 45px;
+  @include vp-1023 {
+    margin-left: 50px;
+    padding: 15px 27px;
   }
 
-  @media (max-width: ($vp-768 - 1px)) {
+  @include vp-767 {
     width: 100%;
     margin: 0;
     padding: 12px 20px;
@@ -121,15 +138,19 @@
 }
 
 .intro__desktop-text {
-  @media (max-width: ($vp-768 - 1px)) {
+  @include vp-767 {
     display: none;
+  }
+
+  @include vp-1023 {
+    letter-spacing: -1px;
   }
 }
 
 .intro__mobile-text {
   display: none;
 
-  @media (max-width: ($vp-768 - 1px)) {
+  @include vp-767 {
     display: block;
   }
 }

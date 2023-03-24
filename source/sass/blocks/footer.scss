@@ -38,6 +38,7 @@
       margin-top: 0;
       margin-bottom: 21px;
       background-image: none;
+      letter-spacing: -0.7px;
     }
 
     @include vp-767 {
@@ -48,6 +49,7 @@
       background-size: 15px 15px;
       background-position: top 20px right 8%;
       cursor: pointer;
+      letter-spacing: -0.5px;
     }
   }
 }
@@ -76,7 +78,8 @@
   width: 170px;
   margin-left: 10px;
 
-  @media (min-width: $tablet-width) {
+  @include vp-1023 {
+    width: 145px;
     flex-wrap: nowrap;
   }
 

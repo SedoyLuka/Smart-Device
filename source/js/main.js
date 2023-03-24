@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import "./show-more";
 import "./accordion";
 import "./scroll";
+import "./tel";
 
 // ---------------------------------
 

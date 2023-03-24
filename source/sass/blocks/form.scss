@@ -11,13 +11,14 @@
 .form__title {
   margin: 0 0 12px;
   padding: 0;
-
+  letter-spacing: -3.7px;
   font-size: 36px;
   line-height: 51px;
   font-family: $header-font;
 
   @include vp-1023 {
     margin: 0 0 7px;
+    letter-spacing: -3.7px;
   }
 
   @include vp-767 {
@@ -48,11 +49,13 @@
   width: 50%;
   margin-top: 165px;
   margin-bottom: 243px;
+  padding-right: 340px;
 
   @include vp-1023 {
     width: 100%;
     margin-top: 46px;
     margin-bottom: 125px;
+    padding: 0 50px;
   }
 
   @include vp-767 {
@@ -65,7 +68,7 @@
     padding: 0;
 
     @include vp-1023 {
-      margin: 0 0 25px;
+      margin: 0 0 20px;
     }
 
     @include vp-767 {
