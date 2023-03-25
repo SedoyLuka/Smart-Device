@@ -88,7 +88,7 @@
     cursor: pointer;
 
     svg {
-      fill: #ffffff;
+      fill: $color-default-white;
     }
   }
 
@@ -129,13 +129,13 @@
   p {
     margin-bottom: 40px;
     line-height: 22px;
-    color: #ffffff;
+    color: $color-default-white;
   }
 
   .modal__subtitle {
     margin: 0;
     margin-bottom: 5px;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-family: $header-font;
     font-size: 30px;
     line-height: 42px;
   }
