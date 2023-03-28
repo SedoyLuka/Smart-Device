@@ -1,10 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import "./modules/show-more";
-import "./modules/accordion";
-import "./modules/scroll";
-import "./modules/tel";
+import './modules/show-more';
+import './modules/accordion';
+import './modules/scroll';
+import './modules/tel';
 
 // ---------------------------------
 
