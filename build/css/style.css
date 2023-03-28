@@ -403,7 +403,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-display: swap;
   src: url("../fonts/RobotoCondensed-400.woff2") format("woff2"), url("../fonts/RobotoCondensed-400.woff") format("woff");
 }
@@ -411,7 +411,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-display: swap;
   src: url("../fonts/RobotoCondensed-700.woff2") format("woff2"), url("../fonts/RobotoCondensed-700.woff") format("woff");
 }
@@ -808,7 +808,7 @@ button,
 .modal__form-wrapper .modal__subtitle {
   margin: 0;
   margin-bottom: 5px;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 30px;
   line-height: 42px;
 }
@@ -1108,7 +1108,7 @@ button,
 }
 
 .intro h1 {
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -1135,7 +1135,7 @@ button,
 .intro__button {
   background-color: #00b2ff;
   padding: 15px 27px;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1232,7 +1232,7 @@ button,
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   color: #00b2ff;
 }
 
@@ -1364,18 +1364,9 @@ button,
 .modal__form-wrapper .modal__subtitle {
   margin: 0;
   margin-bottom: 5px;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 30px;
   line-height: 42px;
-}
-
-.main-form {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #ffffff;
-  background-color: #00b2ff;
 }
 
 .form__title {
@@ -1384,7 +1375,7 @@ button,
   letter-spacing: -3.7px;
   font-size: 36px;
   line-height: 51px;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
 }
 
 .form__img-container {
@@ -1499,7 +1490,7 @@ button,
   min-height: 45px;
   margin-right: 50px;
   font-weight: 700;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   text-transform: uppercase;
   background-color: #041827;
   border-radius: 3px;
@@ -1595,7 +1586,7 @@ button,
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
 }
 
 .info__description {
@@ -1621,7 +1612,7 @@ button,
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   text-align: center;
   color: #00b2ff;
   text-transform: uppercase;
@@ -1643,7 +1634,7 @@ button,
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -1676,7 +1667,7 @@ button,
   margin: 0;
   font-size: 20px;
   line-height: 30px;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -1706,6 +1697,15 @@ button,
   height: 10px;
   background-image: url("../img/svg/array.svg");
   background-repeat: no-repeat;
+}
+
+.main-form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  background-color: #00b2ff;
 }
 
 /* @mixin hover-focus {

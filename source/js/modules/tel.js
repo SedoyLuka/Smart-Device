@@ -1,18 +1,18 @@
 window.addEventListener('DOMContentLoaded', function () {
-  [].forEach.call(document.querySelectorAll('.form__input--tel'), function (input) {
+  [].forEach.call(document.querySelectorAll('input[type="tel"]'), function (input) {
     let keyCode;
     function mask(event) {
       // event.keyCode && keyCode === event.keyCode;
-      let pos = input.selectionStart;
-      if (pos < 3) {
+      let pose = input.selectionStart;
+      if (pose < 3) {
         event.preventDefault();
       }
       let matrix = '+7 (___) ___ ____';
       let i = 0;
       let def = matrix.replace(/\D/g, '');
-      let val = input.value.replace(/\D/g, '');
-      let newValue = matrix.replace(/[_\d]/g, function (a) {
-        return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+      let vale = input.value.replace(/\D/g, '');
+      let newValue = matrix.replace(/[_\d]/g, function (arr) {
+        return i < vale.length ? vale.charAt(i++) || def.charAt(i) : arr;
       });
       i = newValue.indexOf('_');
       if (i !== -1) {
@@ -20,8 +20,8 @@ window.addEventListener('DOMContentLoaded', function () {
         newValue = newValue.slice(0, i);
       }
       let reg = matrix.substr(0, input.value.length).replace(/_+/g,
-          function (a) {
-            return '\\d{1,' + a.length + '}';
+          function (arr) {
+            return '\\d{1,' + arr.length + '}';
           }).replace(/[+()]/g, '\\$&');
       reg = new RegExp('^' + reg + '$');
       if (!reg.test(input.value) || input.value.length < 5 || keyCode > 47 && keyCode < 58) {
