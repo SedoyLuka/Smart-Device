@@ -1,8 +1,8 @@
 // Шрифты
 
-$common-font: "PT Mono";
-$header-font: "RobotoCondensed", "PT Mono", sans-serif;
-$reserve: "Arial";
+$common-font: "PT Mono", $reserve-font;
+$header-font: "Roboto Condensed", $reserve-font;
+$reserve-font: "Arial", sans-serif;
 $secondary-slogan: "Roboto";
 
 // Colors
@@ -50,9 +50,9 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-rouble:                         "PT Mono", "Arial", sans-serif;
+$ff-rouble:                         $common-font;
 
-$ff-placeholder:                    "PT Mono", "Arial", sans-serif;
+$ff-placeholder:                    $common-font;
 
 // Animation
 // ---------------------------------
