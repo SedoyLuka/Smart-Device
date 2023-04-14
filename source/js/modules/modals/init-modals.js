@@ -38,4 +38,9 @@ const initModals = () => {
   window.modals = modals;
 };
 
+// function setFocus()
+// {
+//      document.getElementById("form-name").focus();
+// }
+
 export {modals, initModals};

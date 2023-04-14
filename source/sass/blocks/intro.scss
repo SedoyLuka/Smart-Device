@@ -2,7 +2,7 @@
   color: $text-white;
   padding: 282px 0 286px 475px;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
-    url("../../img/background-image.jpg");
+    url("../img/background-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 58%;
@@ -15,7 +15,7 @@
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
-      url("../../img/background-image@2x.jpg");
+      url("../img/background-image@2x.jpg");
     background-size: cover;
   }
 
@@ -34,9 +34,15 @@
     padding: 125px 20px 190px;
     background-position: 25%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 282px 0 286px 0;
+  }
 }
 
 .intro__wrapper {
+  margin: 0 auto;
+
   @include vp-1023 {
     padding: 0 45px;
   }
