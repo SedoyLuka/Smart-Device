@@ -1,9 +1,12 @@
 .products {
-  padding-left: 10px;
+  // padding-left: 10px;
   padding-top: 66px;
   padding-bottom: 80px;
-
   background-color: $goods-bg;
+
+  .container {
+    padding: 0;
+  }
 
   @include vp-1023 {
     padding-left: 0;

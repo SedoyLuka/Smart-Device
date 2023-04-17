@@ -3,6 +3,10 @@
 
   background-color: $color-alice-blue-lightest;
 
+  .container {
+    padding: 0;
+  }
+
   @include vp-1023 {
     padding-top: 80px;
     padding-left: 0;
@@ -17,7 +21,7 @@
 .advantages__list {
   display: grid;
   margin: 0;
-
+  padding: 0;
   list-style-type: none;
 
   gap: 30px;

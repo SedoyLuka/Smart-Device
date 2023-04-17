@@ -1,9 +1,13 @@
 .info {
   padding-top: 120px;
-  padding-bottom: 130px;
+  padding-bottom: 106px;
   // padding-left: 310px;
   // padding-right: 300px;
   background-color: $color-alice-blue-lightest;
+
+  .container {
+    padding: 0;
+  }
 
   @include vp-1023 {
     padding-top: 74px;

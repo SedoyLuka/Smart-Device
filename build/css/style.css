@@ -821,7 +821,6 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0;
-  max-width: 1023px;
 }
 
 .main-header__set-call {
@@ -1166,10 +1165,15 @@ button,
   background-color: #f2f5f7;
 }
 
+.advantages .container {
+  padding: 0;
+}
+
 .advantages__list {
   display: -ms-grid;
   display: grid;
   margin: 0;
+  padding: 0;
   list-style-type: none;
   gap: 30px;
   -ms-grid-columns: 1fr 1fr;
@@ -1362,7 +1366,6 @@ button,
 .form__title {
   margin: 0 0 12px;
   padding: 0;
-  letter-spacing: -3.7px;
   font-size: 36px;
   line-height: 51px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1546,8 +1549,12 @@ button,
 
 .info {
   padding-top: 120px;
-  padding-bottom: 130px;
+  padding-bottom: 106px;
   background-color: #f2f5f7;
+}
+
+.info .container {
+  padding: 0;
 }
 
 .info__container {
@@ -1612,10 +1619,13 @@ button,
 }
 
 .products {
-  padding-left: 10px;
   padding-top: 66px;
   padding-bottom: 80px;
   background-color: #041827;
+}
+
+.products .container {
+  padding: 0;
 }
 
 .products__title {
