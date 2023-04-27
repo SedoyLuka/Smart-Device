@@ -27,6 +27,7 @@
     margin: 0 auto;
     width: 89.7%;
     max-width: $vp-1024;
+    padding: 0;
   }
 
   @include vp-1023 {
@@ -38,7 +39,7 @@
   align-items: center;
   height: 47.1%;
   min-height: 40px;
-  margin: 1px 40px 0 0;
+  margin: 1px 65px 0 0;
   border-radius: 3px;
   border: 1px solid $color-alice-blue-lightest;
   background: linear-gradient(180deg, $text-color 84.9%, rgba(4, 24, 39, 0) 100%);

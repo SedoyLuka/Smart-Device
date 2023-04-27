@@ -1,6 +1,6 @@
 .intro {
   color: $text-white;
-  padding: 282px 0 286px 475px;
+  padding: 282px 0 286px 0;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
     url("../img/background-image.jpg");
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
   }
 
   @include vp-1919 {
-    padding: 308px 365px 280px;
+    padding-left: 25%;
     color: $text-white;
   }
 
@@ -41,14 +41,21 @@
 }
 
 .intro__wrapper {
-  margin: 0 auto;
+  padding-left: 25%;
+
+  @include vp-1919 {
+    color: $text-white;
+    padding-left: 0;
+  }
 
   @include vp-1023 {
     padding: 0 45px;
+    margin: 0 auto;
   }
 
   @include vp-767 {
     padding: 0;
+    margin: 0 auto;
   }
 }
 
@@ -58,7 +65,7 @@
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: -4.7px;
+  letter-spacing: 5.3px;
   text-transform: uppercase;
   color: $text-white;
   padding: 0 0 34px 0;
@@ -69,14 +76,14 @@
     font-size: 64px;
     line-height: 75px;
     padding: 0;
-    letter-spacing: -2.5px;
+    letter-spacing: 4.5px;
   }
 
   @include vp-767 {
     font-size: 36px;
     line-height: 42px;
     padding: 0 0 8px 0;
-    letter-spacing: -1.5px;
+    letter-spacing: 3.5px;
   }
 }
 
@@ -149,7 +156,7 @@
   }
 
   @include vp-1023 {
-    letter-spacing: -1px;
+    letter-spacing: 1px;
   }
 }
 

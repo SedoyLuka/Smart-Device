@@ -7,7 +7,7 @@
 
   @include vp-1023 {
     margin: 0 0 7px;
-    letter-spacing: -3.7px;
+    letter-spacing: -0.3px;
   }
 
   @include vp-767 {
@@ -229,7 +229,6 @@
       position: absolute;
       top: 4px;
       left: 2px;
-
       width: 10px;
       height: 6px;
 
@@ -243,7 +242,7 @@
   position: absolute;
   top: 4px;
   left: 0;
-
+  cursor: pointer;
   width: 15px;
   height: 15px;
 
