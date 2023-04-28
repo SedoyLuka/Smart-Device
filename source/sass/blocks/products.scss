@@ -1,12 +1,8 @@
 .products {
-  // padding-left: 10px;
   padding-top: 66px;
   padding-bottom: 80px;
   background-color: $goods-bg;
 
-  .container {
-    padding: 0;
-  }
 
   @include vp-1023 {
     padding-left: 0;
@@ -77,6 +73,11 @@
     flex-direction: column;
     gap: 30px;
   }
+
+  @include vp-767 {
+    // margin: 0;
+    padding: 0 26px;
+  }
 }
 
 .products__item {
@@ -84,6 +85,14 @@
   position: relative;
   margin: 0 auto;
   max-height: calc(100% - 60px);
+
+  @include vp-1023 {
+    height: 250px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+  }
 }
 
 .products__link {
@@ -91,6 +100,10 @@
 
   @include vp-1023 {
     height: 250px;
+  }
+
+  @include vp-767 {
+    margin: 0;
   }
 }
 

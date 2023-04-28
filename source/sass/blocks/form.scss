@@ -4,6 +4,7 @@
   font-size: 36px;
   line-height: 51px;
   font-family: $header-font;
+  font-weight: 400;
 
   @include vp-1023 {
     margin: 0 0 7px;
@@ -16,6 +17,10 @@
     line-height: 42px;
     letter-spacing: -0.9px;
   }
+}
+
+.form__post {
+  max-width: 585px;
 }
 
 .form__img-container {
@@ -38,7 +43,7 @@
   width: 50%;
   margin-top: 165px;
   margin-bottom: 243px;
-  padding-right: 340px;
+  // padding-right: 340px;
   color: $color-default-white;
 
   @include vp-1023 {

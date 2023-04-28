@@ -642,10 +642,11 @@ button,
 }
 
 .container {
-  width: 100%;
-  max-width: 1220px;
-  margin: 0 auto;
-  padding: 0 40px;
+  max-width: 1250px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 45px;
+  padding-left: 45px;
 }
 
 .btn {
@@ -798,6 +799,7 @@ button,
   margin-bottom: 40px;
   line-height: 22px;
   color: #ffffff;
+  margin-top: 0;
 }
 
 .modal__form-wrapper .modal__subtitle {
@@ -1030,6 +1032,8 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: clamp(365px, 39.3%, 480px);
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1180,10 +1184,6 @@ button,
 .advantages {
   padding-top: 120px;
   background-color: #f2f5f7;
-}
-
-.advantages .container {
-  padding: 0;
 }
 
 .advantages__list {
@@ -1370,6 +1370,7 @@ button,
   margin-bottom: 40px;
   line-height: 22px;
   color: #ffffff;
+  margin-top: 0;
 }
 
 .modal__form-wrapper .modal__subtitle {
@@ -1386,6 +1387,11 @@ button,
   font-size: 36px;
   line-height: 51px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.form__post {
+  max-width: 585px;
 }
 
 .form__img-container {
@@ -1406,7 +1412,6 @@ button,
   width: 50%;
   margin-top: 165px;
   margin-bottom: 243px;
-  padding-right: 340px;
   color: #ffffff;
 }
 
@@ -1571,10 +1576,6 @@ button,
   background-color: #f2f5f7;
 }
 
-.info .container {
-  padding: 0;
-}
-
 .info__container {
   position: relative;
   width: -webkit-fit-content;
@@ -1640,10 +1641,6 @@ button,
   padding-top: 66px;
   padding-bottom: 80px;
   background-color: #041827;
-}
-
-.products .container {
-  padding: 0;
 }
 
 .products__title {
@@ -2116,6 +2113,10 @@ button,
     gap: 30px;
   }
 
+  .products__item {
+    height: 250px;
+  }
+
   .products__link {
     height: 250px;
   }
@@ -2139,7 +2140,8 @@ button,
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .modal__wrapper {
@@ -2544,6 +2546,18 @@ button,
     padding: 0;
     font-size: 28px;
     line-height: 39px;
+  }
+
+  .products__list {
+    padding: 0 26px;
+  }
+
+  .products__item {
+    margin: 0;
+  }
+
+  .products__link {
+    margin: 0;
   }
 
   .products__heading {

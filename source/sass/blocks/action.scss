@@ -1,6 +1,7 @@
 .action {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: clamp(365px, 39.3%, 480px);
   align-items: center;
 
