@@ -57,6 +57,15 @@
     padding: 0;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    // padding: 0;
+  }
+
+  @media (min-width: ($vp-1920 + 1px)) {
+    padding-left: 35%;
+  }
 }
 
 .intro h1 {

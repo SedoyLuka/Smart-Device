@@ -30,6 +30,9 @@ window.addEventListener('DOMContentLoaded', function () {
       if (event.type === 'blur' && input.value.length < 5) {
         input.value = '';
       }
+      // if ($('input[type="tel"]').val().length!=10) {
+      //   // вы ввели неправильное количество символов в элемент...
+      // }
     }
 
     input.addEventListener('input', mask, false);

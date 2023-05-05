@@ -15,7 +15,7 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 42px;
-    letter-spacing: -0.9px;
+    letter-spacing: 0.1px;
   }
 }
 
@@ -25,7 +25,7 @@
 
 .form__img-container {
   width: 50%;
-  margin-right: -40px;
+  // margin-right: -40px;
   background: linear-gradient(to bottom right, rgba($goods-bg, 0.5) 50%, $main-blue 50%, $main-blue 50%);
 
   @include vp-1023 {
@@ -56,6 +56,10 @@
   @include vp-767 {
     margin-bottom: 90px;
     padding: 0 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
   }
 
   p {
@@ -202,7 +206,7 @@
   color: $color-default-white;
   opacity: 0.8;
 
-  cursor: pointer;
+  // cursor: pointer;
 }
 
 .form__checkbox {
@@ -262,6 +266,10 @@
   @include vp-767 {
     top: 6px;
     left: 5px;
+  }
+
+  @include hover-focus {
+    opacity: 0.7;
   }
 
   .modal & {

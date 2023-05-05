@@ -642,7 +642,7 @@ button,
 }
 
 .container {
-  max-width: 1250px;
+  max-width: 1220px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 45px;
@@ -833,6 +833,7 @@ button,
 }
 
 .main-header__set-call {
+  max-width: 160px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1396,7 +1397,6 @@ button,
 
 .form__img-container {
   width: 50%;
-  margin-right: -40px;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, rgba(4, 24, 39, 0.5)), color-stop(50%, #00b2ff), color-stop(50%, #00b2ff));
   background: -o-linear-gradient(top left, rgba(4, 24, 39, 0.5) 50%, #00b2ff 50%, #00b2ff 50%);
   background: linear-gradient(to bottom right, rgba(4, 24, 39, 0.5) 50%, #00b2ff 50%, #00b2ff 50%);
@@ -1524,7 +1524,6 @@ button,
   line-height: 16px;
   color: #ffffff;
   opacity: 0.8;
-  cursor: pointer;
 }
 
 .form__checkbox {
@@ -1564,6 +1563,10 @@ button,
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #ffffff;
   border-radius: 2px;
+}
+
+.form__mark.focus-visible:focus {
+  opacity: 0.7;
 }
 
 .modal .form__mark {
@@ -1784,8 +1787,32 @@ button,
 */
 
 @media (min-width: 1920px) {
+  .container {
+    padding: 0;
+  }
+
   .intro {
     padding: 282px 0 286px 0;
+  }
+
+  .intro__wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .form__container {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .intro__wrapper {
+    padding-left: 35%;
+  }
+
+  .main-form {
+    padding: 0 20%;
   }
 }
 
@@ -1991,8 +2018,8 @@ button,
 
   .advantages {
     padding-top: 80px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 26px;
+    padding-right: 26px;
   }
 
   .advantages__list {
@@ -2064,8 +2091,8 @@ button,
   .info {
     padding-top: 74px;
     padding-bottom: 79px;
-    padding-left: 50px;
-    padding-right: 8%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .info__container {
@@ -2095,7 +2122,7 @@ button,
 
   .products__title {
     margin: 0 0 38px;
-    padding: 0 6%;
+    padding: 0 3%;
   }
 
   .products__title--desktop {
@@ -2224,7 +2251,7 @@ button,
     position: relative;
     right: 6px;
     margin: 0 auto;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
   }
 
   .footer__contacts {
@@ -2386,7 +2413,7 @@ button,
 
   .advantages__list {
     display: block;
-    padding: 0 24px;
+    padding: 0 10px;
   }
 
   .advantages__item {
@@ -2438,7 +2465,7 @@ button,
     font-weight: 400;
     font-size: 30px;
     line-height: 42px;
-    letter-spacing: -0.9px;
+    letter-spacing: 0.1px;
   }
 
   .form__container {
@@ -2492,7 +2519,7 @@ button,
 
   .info {
     padding-top: 42px;
-    padding-left: 8%;
+    padding-left: 3%;
   }
 
   .info__container {
@@ -2529,7 +2556,7 @@ button,
 
   .products {
     padding-top: 46px;
-    padding-bottom: 86px;
+    padding-bottom: 87px;
   }
 
   .products__title {
@@ -2549,7 +2576,7 @@ button,
   }
 
   .products__list {
-    padding: 0 26px;
+    padding: 0 10px;
   }
 
   .products__item {
@@ -2610,6 +2637,10 @@ button,
   .intro__button:hover:not(.focus-visible) {
     background-color: rgba(83, 217, 250, 0.7137254902);
     color: #f2f5f6;
+  }
+
+  .form__mark:hover:not(.focus-visible) {
+    opacity: 0.7;
   }
 
   .products__img:hover:not(.focus-visible) {
