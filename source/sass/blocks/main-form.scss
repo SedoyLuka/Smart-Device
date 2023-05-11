@@ -8,8 +8,28 @@
   background-color: $main-blue;
 
   @media (min-width: ($vp-1920 + 1px)) {
-    padding: 0 20%;
+    padding: 0 34%;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    width: calc(50% + 10px);
+    background-color: rgba($goods-bg, 0.5);
+
+    @include vp-1023 {
+      content: none;
+    }
+  }
+}
+
+.main-form__wrapper {
+  position: relative;
+  display: flex;
 }
 
 // @media (max-width: ($vp-1920 - 1px)) {
